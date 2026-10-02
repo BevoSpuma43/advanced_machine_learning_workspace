@@ -1,0 +1,56 @@
+{
+  "model_name": "cnn_spatial_head",
+  "run_id": "seed42_20260917T082650Z",
+  "class_mapping": {
+    "features_0.npy": {
+      "label": 0,
+      "name": "real"
+    },
+    "features_1.npy": {
+      "label": 1,
+      "name": "fake"
+    }
+  },
+  "positive_class": "fake",
+  "input_shape": [
+    1280,
+    16,
+    16
+  ],
+  "architecture": {
+    "stem": "Conv1x1 1280->128",
+    "residual_depthwise_blocks": 3,
+    "normalization": "GroupNorm",
+    "channel_attention": true,
+    "pooling": "global_average_and_max",
+    "dropout": 0.3
+  },
+  "normalization": {
+    "path": "dataset\\spatial_channel_normalization.npz",
+    "epsilon": 1e-06,
+    "statistics_split_hash": "e23bd01e9ec079e665ed5cb58cdba6c190d40bb702919412e2f5f5aeca63cbd6"
+  },
+  "split_hash": "e23bd01e9ec079e665ed5cb58cdba6c190d40bb702919412e2f5f5aeca63cbd6",
+  "threshold": 0.8303191217824987,
+  "training": {
+    "seed": 42,
+    "batch_size": 8,
+    "max_epochs": 80,
+    "best_epoch": 5,
+    "patience": 12,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.001,
+    "gradient_clip_norm": 1.0,
+    "amp_enabled": true,
+    "training_time_seconds": 277.7292255
+  },
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scikit_learn": "1.9.1",
+    "torch": "2.14.0+cu126",
+    "cuda": "12.6",
+    "device": "cuda"
+  }
+}

@@ -1,0 +1,50 @@
+# Advanced Machine Learning project
+# Target environment: Windows 10/11, 64-bit, Python 3.12.x
+#
+# IMPORTANT:
+# - Python 3.12 is the selected and tested project baseline. Newer Python
+#   versions may be supported by PyTorch but are outside this environment.
+# - For NVIDIA GPU support, install the CUDA-enabled torch/torchvision wheels
+#   recommended by https://pytorch.org/get-started/locally/ before running
+#   `python -m pip install -r requirements.txt`.
+# - `google-colab` is intentionally omitted: it is provided by Colab and the
+#   notebooks import it only after detecting that they are running on Colab.
+
+# Jupyter runtime and notebook validation
+jupyterlab>=4.2,<5
+notebook>=7.2,<8
+ipykernel>=6.29,<8
+ipywidgets>=8.1,<9
+nbformat>=5.10,<6
+nbclient>=0.10,<1
+
+# Numerical and tabular stack
+numpy>=1.26,<3
+pandas>=2.2,<4
+scipy>=1.13,<2
+scikit-learn>=1.5,<2
+joblib>=1.4,<2
+
+# Classical ML models
+xgboost>=2.1,<4
+
+# Neural networks and ConvNeXt
+torch>=2.5,<3
+torchvision>=0.20,<1
+
+# Visualizations and progress reporting
+matplotlib>=3.9,<4
+seaborn>=0.13,<1
+Pillow>=10.4,<13
+tqdm>=4.66,<5
+matplotlib-venn>=1.1,<2
+
+# Dataset exploration and statistical comparisons
+umap-learn>=0.5.7,<1
+statsmodels>=0.14,<1
+
+# Hardware/resource monitoring and configuration files
+psutil>=6,<8
+nvidia-ml-py>=12,<14
+PyYAML>=6,<7
+packaging>=24,<27

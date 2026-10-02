@@ -1,0 +1,4 @@
+model_a,model_b,agreement
+svm_rbf,xgboost,0.9686468646864687
+svm_rbf,cnn_spatial_head,0.9570957095709571
+xgboost,cnn_spatial_head,0.9554455445544554

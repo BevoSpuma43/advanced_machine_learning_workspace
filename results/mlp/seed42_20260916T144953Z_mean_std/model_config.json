@@ -1,0 +1,41 @@
+{
+  "model_name": "mlp",
+  "run_id": "seed42_20260916T144953Z_mean_std",
+  "representation": "mean_std",
+  "input_dimension": 2560,
+  "hidden_dimensions": [
+    512,
+    128
+  ],
+  "dropout": 0.3,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "batch_size": 128,
+  "max_epochs": 100,
+  "early_stopping_patience": 12,
+  "best_epoch": 10,
+  "validation_balanced_accuracy": 0.9726977833843936,
+  "positive_class": "fake",
+  "positive_label": 1,
+  "class_mapping": {
+    "features_0.npy": {
+      "label": 0,
+      "name": "real"
+    },
+    "features_1.npy": {
+      "label": 1,
+      "name": "fake"
+    }
+  },
+  "split_hash": "e23bd01e9ec079e665ed5cb58cdba6c190d40bb702919412e2f5f5aeca63cbd6",
+  "scaler_fit_scope": "training only",
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scikit_learn": "1.9.1",
+    "pytorch": "2.14.0+cu126",
+    "cuda": "12.6",
+    "device": "cuda"
+  }
+}

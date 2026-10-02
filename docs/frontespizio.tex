@@ -1,0 +1,58 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[italian]{babel}
+\usepackage{subfig}
+\usepackage{newlfont}
+\usepackage{graphicx}
+\textwidth=450pt\oddsidemargin=0pt
+\topmargin -2.5cm
+\usepackage[utf8x]{inputenc}
+\textheight 25cm
+
+
+
+\begin{document}
+\begin{titlepage}
+
+\begin{figure}[ht]                       %crea l'ambiente figura; [h] sta
+                                        %   per here, cioè la figura va qui
+\begin{center}   
+
+\includegraphics[scale=.37]{LOGO_UNISI_VERTICALE_NERO_0.pdf}
+\end{center}
+\end{figure}
+
+\begin{center}
+
+{{\Large{\textsc{Dipartimento di Ingegneria dell'Informazione e Scienze Matematiche}}}}
+\rule[0.1cm]{15.8cm}{0.1mm}
+\rule[0.5cm]{15.8cm}{0.6mm}
+\renewcommand*\rmdefault{cmss}
+Corso di Laurea in \\ NOME DEL CORSO DI LAUREA
+\end{center}
+
+\vspace{15mm}
+\begin{center}
+\begin{huge}
+Titolo
+\end{huge}
+\end{center}
+\vspace{45mm}
+\par
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+{\large{\bf Relatore:\\
+ Prof. Nome Relatore}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\textwidth}\raggedleft
+{\large{\bf Candidato:\\
+Nome Candidato}}
+\end{minipage}
+\vspace{35mm} %modificare questo valore in caso il frontespizio non entri in una sola pagina
+\vfill
+\begin{center}
+{\large{\bf 
+Anno Accademico 2014-2015}}%inserire l'anno accademico a cui si è iscritti
+\end{center}
+\end{titlepage}
+\end{document}

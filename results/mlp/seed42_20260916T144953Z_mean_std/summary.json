@@ -1,0 +1,111 @@
+{
+  "run_id": "seed42_20260916T144953Z_mean_std",
+  "model": "mlp",
+  "representation": "mean_std",
+  "decision_threshold": 0.5,
+  "threshold_selection_split": "validation",
+  "split_hash": "e23bd01e9ec079e665ed5cb58cdba6c190d40bb702919412e2f5f5aeca63cbd6",
+  "split_summary": {
+    "train": {
+      "n_samples": 2825,
+      "real": 1157,
+      "fake": 1668
+    },
+    "validation": {
+      "n_samples": 606,
+      "real": 248,
+      "fake": 358
+    },
+    "test": {
+      "n_samples": 606,
+      "real": 249,
+      "fake": 357
+    }
+  },
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scikit_learn": "1.9.1",
+    "pytorch": "2.14.0+cu126",
+    "cuda": "12.6",
+    "device": "cuda"
+  },
+  "ablation_runs": {
+    "mean_std": {
+      "run_id": "seed42_20260916T144953Z_mean_std",
+      "best_epoch": 10,
+      "validation_balanced_accuracy": 0.9726977833843936
+    }
+  },
+  "metrics": [
+    {
+      "loss": 0.0047237807884812355,
+      "accuracy": 0.9982300884955753,
+      "balanced_accuracy": 0.9985011990407674,
+      "precision": 1.0,
+      "recall": 0.9970023980815348,
+      "specificity": 1.0,
+      "f1": 0.9984989492644851,
+      "roc_auc": 0.9999974091599667,
+      "pr_auc": 0.9999982082475085,
+      "brier_score": 0.0010302690789103508,
+      "run_id": "seed42_20260916T144953Z_mean_std",
+      "model": "mlp",
+      "split": "train",
+      "n_samples": 2825,
+      "threshold": 0.5,
+      "training_time_seconds": 4.5675402999986545,
+      "inference_time_seconds": 0.059525299999222625
+    },
+    {
+      "loss": 0.1441371887922287,
+      "accuracy": 0.9735973597359736,
+      "balanced_accuracy": 0.9726977833843936,
+      "precision": 0.9776536312849162,
+      "recall": 0.9776536312849162,
+      "specificity": 0.967741935483871,
+      "f1": 0.9776536312849162,
+      "roc_auc": 0.9913666876914758,
+      "pr_auc": 0.9927476180211524,
+      "brier_score": 0.02513236738741398,
+      "run_id": "seed42_20260916T144953Z_mean_std",
+      "model": "mlp",
+      "split": "validation",
+      "n_samples": 606,
+      "threshold": 0.5,
+      "training_time_seconds": 4.5675402999986545,
+      "inference_time_seconds": 0.012321799997152993
+    },
+    {
+      "loss": 0.14309950172901154,
+      "accuracy": 0.966996699669967,
+      "balanced_accuracy": 0.9695589079005096,
+      "precision": 0.9884057971014493,
+      "recall": 0.9551820728291317,
+      "specificity": 0.9839357429718876,
+      "f1": 0.9715099715099715,
+      "roc_auc": 0.9958995646451351,
+      "pr_auc": 0.9971737560468624,
+      "brier_score": 0.03018883801996708,
+      "run_id": "seed42_20260916T144953Z_mean_std",
+      "model": "mlp",
+      "split": "test",
+      "n_samples": 606,
+      "threshold": 0.5,
+      "training_time_seconds": 4.5675402999986545,
+      "inference_time_seconds": 0.014362899997649947
+    }
+  ],
+  "artifacts": {
+    "best_state_dict": "c:\\Users\\leona\\venv_aml\\results\\mlp\\seed42_20260916T144953Z_mean_std\\best_state_dict.pt",
+    "model_config": "c:\\Users\\leona\\venv_aml\\results\\mlp\\seed42_20260916T144953Z_mean_std\\model_config.json",
+    "scaler": "c:\\Users\\leona\\venv_aml\\results\\mlp\\seed42_20260916T144953Z_mean_std\\scaler.joblib",
+    "torchscript": "c:\\Users\\leona\\venv_aml\\results\\mlp\\seed42_20260916T144953Z_mean_std\\best_model_scripted.pt",
+    "torchscript_error": null,
+    "history": "c:\\Users\\leona\\venv_aml\\results\\mlp\\seed42_20260916T144953Z_mean_std\\history.csv",
+    "metrics": "c:\\Users\\leona\\venv_aml\\results\\mlp\\seed42_20260916T144953Z_mean_std\\metrics.csv",
+    "predictions": "c:\\Users\\leona\\venv_aml\\results\\mlp\\seed42_20260916T144953Z_mean_std\\predictions.csv",
+    "figures": "c:\\Users\\leona\\venv_aml\\results\\mlp\\seed42_20260916T144953Z_mean_std\\figures"
+  }
+}

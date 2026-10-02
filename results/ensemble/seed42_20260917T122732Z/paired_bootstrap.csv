@@ -1,0 +1,4 @@
+comparison,metric,point_estimate,ci_lower,ci_upper
+ensemble_weighted_minus_convnext,balanced_accuracy,0.011626337281900767,-0.004167837078651671,0.02706342205581035
+ensemble_weighted_minus_convnext,roc_auc,0.004094810615008937,0.0013691871029384544,0.007670721093503947
+ensemble_weighted_minus_convnext,pr_auc,0.003376843490925041,0.0008933440542201077,0.0069204747850025

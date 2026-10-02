@@ -1,0 +1,99 @@
+{
+  "run_id": "seed42_20260916T133639Z",
+  "model": "svm_rbf",
+  "pooling": "gap",
+  "selected_hyperparameters": {
+    "C": 10.0,
+    "gamma": "scale",
+    "class_weight": "none",
+    "pca": "none"
+  },
+  "threshold": 0.5700000000000001,
+  "split_hash": "e23bd01e9ec079e665ed5cb58cdba6c190d40bb702919412e2f5f5aeca63cbd6",
+  "split_summary": {
+    "train": {
+      "n_samples": 2825,
+      "real": 1157,
+      "fake": 1668
+    },
+    "validation": {
+      "n_samples": 606,
+      "real": 248,
+      "fake": 358
+    },
+    "test": {
+      "n_samples": 606,
+      "real": 249,
+      "fake": 357
+    }
+  },
+  "tuning_seconds": 421.4104917000004,
+  "calibration_seconds": 10.370100100000855,
+  "model_size_bytes": 57845226,
+  "metrics": [
+    {
+      "run_id": "seed42_20260916T133639Z",
+      "model": "svm_rbf",
+      "split": "train",
+      "n_samples": 2825,
+      "loss": 3.390495437314046e-05,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "brier_score": 0.0010153864792688907,
+      "threshold": 0.5700000000000001,
+      "training_time_seconds": 431.7805918000013,
+      "inference_time_seconds": 11.94894099999874
+    },
+    {
+      "run_id": "seed42_20260916T133639Z",
+      "model": "svm_rbf",
+      "split": "validation",
+      "n_samples": 606,
+      "loss": 0.17552020815767772,
+      "accuracy": 0.9801980198019802,
+      "balanced_accuracy": 0.9776648945755992,
+      "precision": 0.9752747252747253,
+      "recall": 0.9916201117318436,
+      "specificity": 0.9637096774193549,
+      "f1": 0.9833795013850416,
+      "roc_auc": 0.9965984862137321,
+      "pr_auc": 0.997496207301152,
+      "brier_score": 0.020844851509361908,
+      "threshold": 0.5700000000000001,
+      "training_time_seconds": 431.7805918000013,
+      "inference_time_seconds": 2.4781402999997226
+    },
+    {
+      "run_id": "seed42_20260916T133639Z",
+      "model": "svm_rbf",
+      "split": "test",
+      "n_samples": 606,
+      "loss": 0.1849139809288247,
+      "accuracy": 0.9686468646864687,
+      "balanced_accuracy": 0.9721744119334481,
+      "precision": 0.9941520467836257,
+      "recall": 0.9523809523809523,
+      "specificity": 0.9919678714859438,
+      "f1": 0.9728183118741058,
+      "roc_auc": 0.9970526363155705,
+      "pr_auc": 0.9979315889496938,
+      "brier_score": 0.021510892530193185,
+      "threshold": 0.5700000000000001,
+      "training_time_seconds": 431.7805918000013,
+      "inference_time_seconds": 2.5160603000003903
+    }
+  ],
+  "artifacts": {
+    "model": "c:\\Users\\leona\\venv_aml\\results\\svm_rbf\\seed42_20260916T133639Z\\best_model.joblib",
+    "metrics": "c:\\Users\\leona\\venv_aml\\results\\svm_rbf\\seed42_20260916T133639Z\\metrics.csv",
+    "predictions": "c:\\Users\\leona\\venv_aml\\results\\svm_rbf\\seed42_20260916T133639Z\\predictions.csv",
+    "tuning": "c:\\Users\\leona\\venv_aml\\results\\svm_rbf\\seed42_20260916T133639Z\\tuning_results.csv",
+    "figures": "c:\\Users\\leona\\venv_aml\\results\\svm_rbf\\seed42_20260916T133639Z\\figures"
+  }
+}

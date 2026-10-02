@@ -1,0 +1,107 @@
+{
+  "run_id": "seed42_20260916T142429Z",
+  "model": "xgboost",
+  "pooling": "mean_std",
+  "selected_hyperparameters": {
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "subsample": 0.85,
+    "colsample_bytree": 0.75,
+    "min_child_weight": 5,
+    "scale_pos_weight": 1.0
+  },
+  "best_iteration": 146,
+  "threshold": 0.43,
+  "split_hash": "e23bd01e9ec079e665ed5cb58cdba6c190d40bb702919412e2f5f5aeca63cbd6",
+  "split_summary": {
+    "train": {
+      "n_samples": 2825,
+      "real": 1157,
+      "fake": 1668
+    },
+    "validation": {
+      "n_samples": 606,
+      "real": 248,
+      "fake": 358
+    },
+    "test": {
+      "n_samples": 606,
+      "real": 249,
+      "fake": 357
+    }
+  },
+  "tuning_method": "Optuna TPESampler with MedianPruner",
+  "tuning_seconds": 1217.233844399998,
+  "final_fit_seconds": 22.862148800002615,
+  "model_size_bytes": 257215,
+  "bundle_size_bytes": 252998,
+  "metrics": [
+    {
+      "run_id": "seed42_20260916T142429Z",
+      "model": "xgboost",
+      "split": "train",
+      "n_samples": 2825,
+      "loss": 0.0051616826094686985,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "brier_score": 0.00021907573682256043,
+      "threshold": 0.43,
+      "training_time_seconds": 1240.0959932000005,
+      "inference_time_seconds": 0.03141529999993509
+    },
+    {
+      "run_id": "seed42_20260916T142429Z",
+      "model": "xgboost",
+      "split": "validation",
+      "n_samples": 606,
+      "loss": 0.08573773503303528,
+      "accuracy": 0.9702970297029703,
+      "balanced_accuracy": 0.9674265633447467,
+      "precision": 0.967032967032967,
+      "recall": 0.9832402234636871,
+      "specificity": 0.9516129032258065,
+      "f1": 0.9750692520775623,
+      "roc_auc": 0.9949653090646964,
+      "pr_auc": 0.996345451012749,
+      "brier_score": 0.025155620649456978,
+      "threshold": 0.43,
+      "training_time_seconds": 1240.0959932000005,
+      "inference_time_seconds": 0.046486499999446096
+    },
+    {
+      "run_id": "seed42_20260916T142429Z",
+      "model": "xgboost",
+      "split": "test",
+      "n_samples": 606,
+      "loss": 0.10506509989500046,
+      "accuracy": 0.9603960396039604,
+      "balanced_accuracy": 0.9597043636731801,
+      "precision": 0.9690140845070423,
+      "recall": 0.9635854341736695,
+      "specificity": 0.9558232931726908,
+      "f1": 0.9662921348314607,
+      "roc_auc": 0.9934190543687355,
+      "pr_auc": 0.9953116125799465,
+      "brier_score": 0.03005809336900711,
+      "threshold": 0.43,
+      "training_time_seconds": 1240.0959932000005,
+      "inference_time_seconds": 0.0058666000004450325
+    }
+  ],
+  "artifacts": {
+    "native_model": "c:\\Users\\leona\\venv_aml\\results\\xgboost\\seed42_20260916T142429Z\\best_model.json",
+    "bundle": "c:\\Users\\leona\\venv_aml\\results\\xgboost\\seed42_20260916T142429Z\\model_bundle.joblib",
+    "history": "c:\\Users\\leona\\venv_aml\\results\\xgboost\\seed42_20260916T142429Z\\history.csv",
+    "metrics": "c:\\Users\\leona\\venv_aml\\results\\xgboost\\seed42_20260916T142429Z\\metrics.csv",
+    "predictions": "c:\\Users\\leona\\venv_aml\\results\\xgboost\\seed42_20260916T142429Z\\predictions.csv",
+    "tuning": "c:\\Users\\leona\\venv_aml\\results\\xgboost\\seed42_20260916T142429Z\\tuning_results.csv",
+    "optuna_study": "c:\\Users\\leona\\venv_aml\\results\\xgboost\\seed42_20260916T142429Z\\optuna_study.json",
+    "figures": "c:\\Users\\leona\\venv_aml\\results\\xgboost\\seed42_20260916T142429Z\\figures"
+  }
+}

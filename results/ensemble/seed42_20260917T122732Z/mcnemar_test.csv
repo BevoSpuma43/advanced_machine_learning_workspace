@@ -1,0 +1,2 @@
+comparison,ensemble_only_correct,convnext_only_correct,p_value
+ensemble_weighted_vs_convnext,18,10,0.1849333420395851

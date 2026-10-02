@@ -1,0 +1,36 @@
+{
+  "components": [
+    "svm_rbf",
+    "xgboost",
+    "cnn_spatial_head"
+  ],
+  "weights": {
+    "svm_rbf": 0.45,
+    "xgboost": 0.35000000000000003,
+    "cnn_spatial_head": 0.2
+  },
+  "threshold": 0.6136216890279877,
+  "positive_class": "fake",
+  "positive_label": 1,
+  "pooling": "mixed_by_component",
+  "component_preprocessing": {
+    "svm_rbf": "gap",
+    "xgboost": "mean_std",
+    "cnn_spatial_head": "spatial_channel_normalized"
+  },
+  "cnn_temperature": 2.9835566896880077,
+  "split_hash": "e23bd01e9ec079e665ed5cb58cdba6c190d40bb702919412e2f5f5aeca63cbd6",
+  "run_ids": {
+    "svm_rbf": "seed42_20260916T133639Z",
+    "xgboost": "seed42_20260916T142429Z",
+    "cnn_spatial_head": "seed42_20260917T082650Z",
+    "convnext": "seed42_20260917T111244Z"
+  },
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1"
+  }
+}

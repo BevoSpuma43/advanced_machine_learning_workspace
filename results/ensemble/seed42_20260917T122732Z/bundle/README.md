@@ -1,0 +1,1 @@
+Bundle dell'ensemble SVM RBF + XGBoost + CNN spatial head. Applicare i preprocessing dichiarati in ensemble_config.json, ottenere probabilità calibrate dei tre componenti, combinare con i pesi salvati e applicare la soglia salvata. La classe positiva è fake, label 1. ConvNeXt non è un componente del bundle.
